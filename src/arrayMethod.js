@@ -22,3 +22,17 @@ const planetList = document.querySelector("#planets")
 planets.map(planet => {
     console.log(planet.charAt(0).toUpperCase() + planet.substr(1))
 })
+
+/*
+    Use the filter method to create a new array that
+    contains planets with the letter 'e'. Use the `includes()`
+    method on strings.
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+*/
+
+const newArray = planets.filter(planet => {
+    if(planet.includes("e")){
+        console.log(planet)
+    }
+})
